@@ -53,7 +53,7 @@ See [`scaffolded-skills/`](scaffolded-skills/) for examples:
 ## Repo Structure
 
 ```
-5. Scaffold/          ← master source files (Obsidian .md, source of truth)
+Scaffold/          ← master source files (Obsidian .md, source of truth)
 claude-skill/
   build-scaffold.sh   ← assembles human-directed-ai-workflow-builder.skill from masters
   human-directed-ai-workflow-builder/

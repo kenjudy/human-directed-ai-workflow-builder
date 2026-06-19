@@ -1,7 +1,7 @@
 #!/bin/bash
 # Build script for AI Workflow Builder skill
 # Generates ONE skill package: human-directed-ai-workflow-builder.skill
-# Reads master source files from 5. Scaffold/, writes references/, zips to human-directed-ai-workflow-builder.skill
+# Reads master source files from Scaffold/, writes references/, zips to human-directed-ai-workflow-builder.skill
 
 set -e  # Exit on error
 
@@ -21,10 +21,10 @@ SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 REPO_ROOT="$(cd "$SCRIPT_DIR/.." && pwd)"
 SKILL_DIR="$SCRIPT_DIR/human-directed-ai-workflow-builder"
 
-# Master source files (5. Scaffold/ — source of truth for prompt content)
-MASTER_DISCOVERY="$REPO_ROOT/5. Scaffold/5a. Socratic Discovery.md"
-MASTER_TEMPLATES="$REPO_ROOT/5. Scaffold/5b. Generation Templates.md"
-MASTER_REFINEMENT="$REPO_ROOT/5. Scaffold/5c. Refinement Protocol.md"
+# Master source files (Scaffold/ — source of truth for prompt content)
+MASTER_DISCOVERY="$REPO_ROOT/Scaffold/Socratic Discovery.md"
+MASTER_TEMPLATES="$REPO_ROOT/Scaffold/Generation Templates.md"
+MASTER_REFINEMENT="$REPO_ROOT/Scaffold/Refinement Protocol.md"
 
 # Verify master files exist
 echo -e "${BLUE}Verifying master source files...${NC}"
