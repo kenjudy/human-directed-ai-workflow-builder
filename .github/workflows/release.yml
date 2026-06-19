@@ -1,0 +1,33 @@
+name: Release pdca-scaffold
+
+on:
+  push:
+    tags:
+      - "v*.*.*"
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v6
+
+      - name: Build skill package
+        run: bash claude-skill/build-scaffold.sh
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v3
+        with:
+          files: claude-skill/pdca-scaffold.skill
+          generate_release_notes: false
+          body: |
+            ## Install
+
+            **Claude.ai:** Go to **Customize** → **Skills** → **Add Skill** → upload `pdca-scaffold.skill`.
+
+            **Claude Code (local install):**
+            ```bash
+            unzip -o pdca-scaffold.skill -d ~/.claude/skills/
+            ```
+
+            See the [README](https://github.com/kenjudy/pdca-scaffold/blob/main/README.md) for full documentation.
