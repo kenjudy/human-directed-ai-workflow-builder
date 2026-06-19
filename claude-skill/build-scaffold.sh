@@ -1,7 +1,7 @@
 #!/bin/bash
-# Build script for PDCA Scaffold Skill
-# Generates ONE skill package: pdca-scaffold.skill
-# Reads master source files from 5. Scaffold/, writes references/, zips to pdca-scaffold.skill
+# Build script for AI Workflow Builder skill
+# Generates ONE skill package: ai-workflow-builder.skill
+# Reads master source files from 5. Scaffold/, writes references/, zips to ai-workflow-builder.skill
 
 set -e  # Exit on error
 
@@ -13,13 +13,13 @@ RED='\033[0;31m'
 NC='\033[0m' # No Color
 
 echo -e "${BLUE}═══════════════════════════════════════════════════════${NC}"
-echo -e "${BLUE}   Building PDCA Scaffold Skill${NC}"
+echo -e "${BLUE}   Building AI Workflow Builder Skill${NC}"
 echo -e "${BLUE}═══════════════════════════════════════════════════════${NC}\n"
 
 # Paths
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 REPO_ROOT="$(cd "$SCRIPT_DIR/.." && pwd)"
-SKILL_DIR="$SCRIPT_DIR/pdca-scaffold"
+SKILL_DIR="$SCRIPT_DIR/ai-workflow-builder"
 
 # Master source files (5. Scaffold/ — source of truth for prompt content)
 MASTER_DISCOVERY="$REPO_ROOT/5. Scaffold/5a. Socratic Discovery.md"
@@ -76,26 +76,26 @@ echo -e "${GREEN}✓ Built refinement-protocol.md${NC}\n"
 # PACKAGE SKILL
 # ═══════════════════════════════════════════════════════
 
-echo -e "${BLUE}Creating pdca-scaffold.skill package...${NC}"
-SKILL_FILE="$SCRIPT_DIR/pdca-scaffold.skill"
+echo -e "${BLUE}Creating ai-workflow-builder.skill package...${NC}"
+SKILL_FILE="$SCRIPT_DIR/ai-workflow-builder.skill"
 [ -f "$SKILL_FILE" ] && rm "$SKILL_FILE"
 
 cd "$SCRIPT_DIR"
 zip -r "$SKILL_FILE" \
-    pdca-scaffold/SKILL.md \
-    pdca-scaffold/references/discovery-guide.md \
-    pdca-scaffold/references/generation-templates.md \
-    pdca-scaffold/references/refinement-protocol.md \
+    ai-workflow-builder/SKILL.md \
+    ai-workflow-builder/references/discovery-guide.md \
+    ai-workflow-builder/references/generation-templates.md \
+    ai-workflow-builder/references/refinement-protocol.md \
     -x "*.DS_Store" \
     -q
 
 if [ ! -f "$SKILL_FILE" ]; then
-    echo -e "${RED}Error: Failed to create pdca-scaffold.skill${NC}"
+    echo -e "${RED}Error: Failed to create ai-workflow-builder.skill${NC}"
     exit 1
 fi
 
 SKILL_SIZE=$(du -h "$SKILL_FILE" | cut -f1)
-echo -e "${GREEN}✓ Created pdca-scaffold.skill ($SKILL_SIZE)${NC}\n"
+echo -e "${GREEN}✓ Created ai-workflow-builder.skill ($SKILL_SIZE)${NC}\n"
 
 # ═══════════════════════════════════════════════════════
 # BUILD SUMMARY
@@ -106,13 +106,13 @@ echo -e "${GREEN}   Build Complete!${NC}"
 echo -e "${GREEN}═══════════════════════════════════════════════════════${NC}\n"
 
 echo -e "${BLUE}Package:${NC}"
-echo -e "  File: pdca-scaffold.skill"
+echo -e "  File: ai-workflow-builder.skill"
 echo -e "  Size: $SKILL_SIZE"
 unzip -l "$SKILL_FILE"
 echo ""
 
 echo -e "${BLUE}Next steps:${NC}"
-echo "1. Review generated files in pdca-scaffold/references/"
-echo "2. Install: unzip -o pdca-scaffold.skill -d ~/.claude/skills/"
+echo "1. Review generated files in ai-workflow-builder/references/"
+echo "2. Install: unzip -o ai-workflow-builder.skill -d ~/.claude/skills/"
 echo "3. Commit changes if everything looks good"
 echo ""

@@ -18,16 +18,16 @@ jobs:
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v3
         with:
-          files: claude-skill/pdca-scaffold.skill
+          files: claude-skill/ai-workflow-builder.skill
           generate_release_notes: false
           body: |
             ## Install
 
-            **Claude.ai:** Go to **Customize** → **Skills** → **Add Skill** → upload `pdca-scaffold.skill`.
+            **Claude.ai:** Go to **Customize** → **Skills** → **Add Skill** → upload `ai-workflow-builder.skill`.
 
             **Claude Code (local install):**
             ```bash
-            unzip -o pdca-scaffold.skill -d ~/.claude/skills/
+            unzip -o ai-workflow-builder.skill -d ~/.claude/skills/
             ```
 
             See the [README](https://github.com/kenjudy/ai-workflow-builder/blob/main/README.md) for full documentation.
