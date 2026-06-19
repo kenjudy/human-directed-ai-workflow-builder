@@ -1,5 +1,5 @@
 ---
-name: daily-retro-pdca
+name: daily-retro
 description: Guides a structured daily or weekly retrospection by reading Slack, G Suite,
   Granola, and Obsidian vaults to identify patterns and facilitate Socratic self-reflection
   for personal performance improvement as a leader, software developer, consultant, and author.

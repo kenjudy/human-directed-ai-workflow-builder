@@ -11,4 +11,4 @@
 
 ### New Skill (initial release as part of pdca-framework)
 - **pdca-scaffold**: First-class skill using 5-layer Socratic discovery to generate a domain-specific PDCA skill for any complex repeatable human task. Includes an active learning loop: after each ACT phase, proposes specific diffs back to the skill's own reference files; the human approves and commits; the skill sharpens over cycles without growing longer (anti-drift rule: +/- 10 net lines per refinement). Added `Scaffold/` master source files, `build-scaffold.sh`, and `pdca-scaffold/SKILL.md`.
-- **daily-retro-pdca**: Scaffolded example skill for structured daily and weekly retrospection. Added to `scaffolded-skills/`.
+- **daily-retro**: Scaffolded example skill for structured daily and weekly retrospection. Added to `scaffolded-skills/`.

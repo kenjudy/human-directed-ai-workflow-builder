@@ -46,7 +46,7 @@ A generated skill that hasn't been through eval is an untested assumption.
 
 See [`scaffolded-skills/`](scaffolded-skills/) for examples:
 
-- **daily-retro-pdca** — Structured daily and weekly retrospection skill
+- **daily-retro** — Structured daily and weekly retrospection skill
 
 ---
 
