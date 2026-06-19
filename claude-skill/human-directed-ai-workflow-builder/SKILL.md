@@ -1,5 +1,5 @@
 ---
-name: ai-workflow-builder
+name: human-directed-ai-workflow-builder
 description: Generates a customized, installable PDCA skill for any complex repeatable human task that benefits from agentic HITL (Human-in-the-Loop) workflows. Use this skill whenever a user wants to create a structured AI-assisted process for a specific domain, design a new agentic workflow, capture and systematize a recurring complex task, or build a collaboration process for non-software work. Triggers on phrases like "create a process for", "build a workflow for", "help me structure", "design a PDCA cycle for", "systematize my", "how should I use AI to help me with", or any request to scaffold a new agentic collaboration pattern. Also use this when someone describes a repeatable task and wants to know how AI can assist with it reliably.
 ---
 

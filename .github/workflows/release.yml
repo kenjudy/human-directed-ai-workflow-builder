@@ -1,4 +1,4 @@
-name: Release ai-workflow-builder
+name: Release human-directed-ai-workflow-builder
 
 on:
   push:
@@ -18,16 +18,16 @@ jobs:
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v3
         with:
-          files: claude-skill/ai-workflow-builder.skill
+          files: claude-skill/human-directed-ai-workflow-builder.skill
           generate_release_notes: false
           body: |
             ## Install
 
-            **Claude.ai:** Go to **Customize** → **Skills** → **Add Skill** → upload `ai-workflow-builder.skill`.
+            **Claude.ai:** Go to **Customize** → **Skills** → **Add Skill** → upload `human-directed-ai-workflow-builder.skill`.
 
             **Claude Code (local install):**
             ```bash
-            unzip -o ai-workflow-builder.skill -d ~/.claude/skills/
+            unzip -o human-directed-ai-workflow-builder.skill -d ~/.claude/skills/
             ```
 
-            See the [README](https://github.com/kenjudy/ai-workflow-builder/blob/main/README.md) for full documentation.
+            See the [README](https://github.com/kenjudy/human-directed-ai-workflow-builder/blob/main/README.md) for full documentation.
