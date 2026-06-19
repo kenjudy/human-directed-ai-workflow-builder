@@ -67,7 +67,7 @@ plugins/              ← plugin manifests for Claude marketplaces
 
 ## Related
 
-- [pdca-framework](https://github.com/kenjudy/pdca-framework) — TDD-disciplined AI-assisted software development skill
+- [pdca-framework](https://github.com/kenjudy/pdca-agentic-coding-framework) — TDD-disciplined AI-assisted software development skill
 
 ---
 
