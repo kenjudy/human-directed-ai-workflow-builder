@@ -140,7 +140,9 @@ it.
 
 First ask: "Where would you like the skill generated? The skill directory will be named
 `[domain]-pdca/`. Provide a path relative to the current directory, or press Enter to
-use the current directory." Wait for my answer.
+use the current directory." Wait for my answer. Before generating any files, restate
+the resolved path and confirm: "I'll generate the skill at `[resolved-path]/[domain]-pdca/`.
+Confirm?" Do not proceed until I confirm.
 
 Then generate these files at `[base-path]/[domain]-pdca/` (domain name from the task
 description, slugified, lowercase, hyphens):

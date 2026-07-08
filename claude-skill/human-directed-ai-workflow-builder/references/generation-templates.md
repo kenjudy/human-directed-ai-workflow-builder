@@ -22,6 +22,12 @@ Provide a path relative to the current directory, or press Enter to use the curr
 Wait for the answer. Use the provided path as the base. If the user presses Enter or provides no path,
 generate directly in the current project directory.
 
+Before writing any files, restate the resolved path explicitly and get a one-word confirm:
+"I'll generate the skill at `[resolved-path]/[domain]-pdca/`. Confirm?"
+Do not proceed to file generation until the human confirms. This applies even when the
+human's answer seems clear — an unverified path assumption is the same failure mode as
+an unverified discovery answer, and the same confirm-before-acting discipline applies.
+
 Generate the following files at `[base-path]/[domain]-pdca/`:
 Use the domain name from the task description (slugified, lowercase, hyphens).
 
