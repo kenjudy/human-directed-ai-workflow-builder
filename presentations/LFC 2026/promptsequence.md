@@ -229,6 +229,7 @@ After generating all files, tell me:
    the SKILL.md format and description triggering, and runs with-skill vs. without-skill
    comparisons to confirm the skill actually helps.
 5. That refinements happen at the end of each ACT phase using Prompt 3 in this sequence.
+6. To install the skill-creator needed for step 4, if not already installed: download SKILL.md from https://github.com/anthropics/skills/blob/main/skills/skill-creator/SKILL.md into ~/.claude/skills/skill-creator/ and restart Claude Code, then run /skill-creator to initiate a full eval of the generated skill against the confirmed discovery summary.
 ```
 
 ---
