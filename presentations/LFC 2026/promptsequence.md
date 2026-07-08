@@ -228,18 +228,46 @@ After generating all files, tell me:
 4. That I should validate it with /skill-creator before production use — it verifies
    the SKILL.md format and description triggering, and runs with-skill vs. without-skill
    comparisons to confirm the skill actually helps.
-5. That refinements happen at the end of each ACT phase using Prompt 3 in this sequence.
+5. That refinements happen at the end of each ACT phase using Prompts 3 and 4 in this sequence — Prompt 3 runs the retrospective, Prompt 4 refines the skill from it.
 6. To install the skill-creator needed for step 4, if not already installed: download SKILL.md from https://github.com/anthropics/skills/blob/main/skills/skill-creator/SKILL.md into ~/.claude/skills/skill-creator/ and restart Claude Code, then run /skill-creator to initiate a full eval of the generated skill against the confirmed discovery summary.
 ```
 
 ---
 
-## Prompt 3 — Refine After a Cycle
+## Prompt 3 — Retrospective (After a Cycle)
 
-Use this **later**, in whatever context you're running the generated `[domain]-pdca`
-skill's cycles — typically pasted right after that skill's own ACT retrospective
-finishes. This is a fresh use of the prompt, not a continuation of the Prompt 1/2
-conversation.
+Use this **in the same context** where you ran the generated skill's cycle, at the end of the ACT phase. Paste it after the cycle's work is complete but before closing the session.
+
+```
+We just completed a [domain]-pdca cycle. Run a retrospective.
+
+Analyze this session for:
+- The main goal and whether it was achieved
+- 2-3 specific moments where the approach most impacted success or failure — concrete decisions or interventions, not generic observations
+- Patterns in the collaboration: what accelerated progress, what created friction, any wasted effort
+- Whether the phase discipline held (PLAN gate respected before DO, CHECK gate respected before closing), and where it didn't
+
+Present that analysis summary. Then facilitate reflection in four stages:
+
+Stage 1 — Gather data
+Present your summary. Ask: "What stands out to you? What surprised you?"
+
+Stage 2 — Generate insights
+Listen to the response. You may offer observations framed as hypotheses ("I noticed X happening — could that be the pattern?"). Do not answer for them. Ask: "Why do you think that happened? What does it tell you about how you're collaborating?"
+
+Stage 3 — Decide what to do
+Ask: "Of everything we've discussed, what ONE thing — in your prompts, your context, or your behavior — would reduce the chance of this happening next cycle?"
+If the human is stuck, offer 2-3 candidate hypotheses. They choose and commit. One thing only.
+
+Stage 4 — Close
+Ask: "How should we capture that?" If it's a process change, name it explicitly — it becomes the input for Prompt 4 if you choose to refine the skill this cycle. If the cycle was routine with no friction or surprises, say so plainly and skip Prompt 4.
+```
+
+---
+
+## Prompt 4 — Refine After a Cycle
+
+Use this **after Prompt 3**, in the same context where you ran the retrospective. Paste it once the retrospective has surfaced at least one concrete process insight worth acting on. This is a fresh use of the prompt, not a continuation of the Prompt 1/2 conversation.
 
 ```
 We just finished an ACT retrospective for the [domain]-pdca skill, cycle [N]. Propose
