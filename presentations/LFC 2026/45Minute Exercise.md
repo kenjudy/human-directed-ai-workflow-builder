@@ -57,15 +57,22 @@ Everyone writes their task's name at the top of the capture sheet. Move on immed
 |---|---|---|---|
 | 0:00-2:00 | Frame | — | Task named |
 | 2:00-7:00 | **PLAN** | Layer 1 — Task Essence | Q1-Q2 answered |
-| 7:00-15:00 | **DO** | Layer 2 — Human-AI Role Division | Q3-Q5 answered |
-| 15:00-23:00 | **CHECK** | Layer 3 — Quality Contract | Q6-Q7 answered + peer vagueness pass |
-| 23:00-36:00 | **ACT** | Layer 4 — Process Shape, Layer 5 — Learning Loop | Q8-Q11 answered |
+| 7:00-21:00 | **DO** | Layer 2 — Human-AI Role Division, Layer 4 — Process Shape | Q3-Q7 answered |
+| 21:00-29:00 | **CHECK** | Layer 3 — Quality Contract | Q8-Q9 answered + peer vagueness pass |
+| 29:00-36:00 | **ACT** | Layer 5 — Learning Loop | Q10-Q11 answered |
 | 36:00-40:00 | Assemble | Confirmation Gate | Full summary written, ready to paste |
 | 40:00-45:00 | Live demo | — | Summary fed into Prompt 2, no skill install needed |
 
 Read each phase's questions aloud once, hold the stated time, move on even mid-answer —
 an unfinished but honest answer is more useful than a polished one that misses the
 window. Nobody leaves without a full, if rough, Confirmation Gate summary.
+
+**Why DO carries five questions:** DO is where "the doing" actually gets shaped — not
+just who does it (Layer 2), but where its boundaries sit and when it has to stop (the
+parts of Layer 4 about execution, as opposed to Layer 4's learning-loop cousin, which
+moved to ACT). CHECK stays focused purely on quality signals, and ACT stays focused
+purely on what to learn and change next cycle — closer to what "Act" means in a
+textbook PDCA loop.
 
 ---
 
@@ -86,26 +93,35 @@ on-demand / event-triggered)
 
 ---
 
-## DO — Layer 2: Human-AI Role Division (8 min)
+## DO — Layer 2 + Layer 4: Role Division and Process Shape (14 min)
 
 Say:
 
 ```
-Now let's map who owns what — this is the actual division of labor an AI-assisted
-version of this task would use. For Q4, name the review gate explicitly: "AI drafts X,
-human reviews before Y" — not just "AI drafts X." That phrasing is what goes straight
-into the generated skill without editing.
+Now let's map who owns what, and where the boundaries of "doing" actually sit. For Q4,
+name the review gate explicitly: "AI drafts X, human reviews before Y" — not just "AI
+drafts X." For Q6, phrase each trigger as "Stop if AI [behavior]." Both phrasings slot
+straight into the generated skill without editing.
 ```
 
-**Q3:** *What parts of this task require human judgment that cannot be delegated to AI?*
-(Think: decisions that depend on relationships, context not in documents, ethical
-weight, or accountability.)
+**Q3 (2.5 min):** *What parts of this task require human judgment that cannot be
+delegated to AI?* (Think: decisions that depend on relationships, context not in
+documents, ethical weight, or accountability.)
 
-**Q4:** *What parts can AI execute autonomously, with the human reviewing only at
-defined gates?* Name the gate explicitly, not just the task.
+**Q4 (3.5 min):** *What parts can AI execute autonomously, with the human reviewing
+only at defined gates?* Name the gate explicitly, not just the task.
 
-**Q5:** *What are the irreversible or highest-stakes moments — decisions the human must
-own, where a mistake is costly or hard to undo?*
+**Q5 (2.5 min):** *What are the irreversible or highest-stakes moments — decisions the
+human must own, where a mistake is costly or hard to undo?*
+
+**Q6 (3 min):** *What behaviors by the AI should trigger an immediate STOP and human
+intervention?* Phrase each as "Stop if AI [specific behavior]." (Think: scope creep,
+skipping a step, making assumptions about stakeholders, producing output without a
+required review gate.)
+
+**Q7 (2.5 min):** *What are the natural phases in this task? Describe what "analysis
+done" looks like (before execution begins) and what "execution done" looks like (before
+you verify quality).*
 
 ---
 
@@ -118,10 +134,10 @@ Now let's define what "done well" looks like — then pressure-test everything y
 written so far.
 ```
 
-**Q6:** *How do you know when one cycle is successfully complete? Name 3-5 specific,
+**Q8:** *How do you know when one cycle is successfully complete? Name 3-5 specific,
 observable signals.* Not "it feels right" — what would you point to?
 
-**Q7:** *What are the most common failure modes you want this process to prevent?*
+**Q9:** *What are the most common failure modes you want this process to prevent?*
 (What goes wrong when the task is done badly or skipped?)
 
 ### Peer Vagueness Pass (folded into CHECK's 8 minutes — budget the last 3)
@@ -143,29 +159,19 @@ own vagueness alone.
 
 ---
 
-## ACT — Layer 4 + Layer 5: Process Shape and Learning Loop (13 min)
+## ACT — Layer 5: Learning Loop (7 min)
 
 Say:
 
 ```
-Let's define the phase boundaries, the intervention points, and the improvement loop —
-the parts of the plan that make the generated skill actually correct itself. For Q9,
-write each trigger as "Stop if AI [behavior]" — that exact imperative phrasing is what
-the generated skill's STOP Triggers section needs.
+Last step: what gets better next cycle.
 ```
 
-**Q8:** *What are the natural phases in this task? Describe what "analysis done" looks
-like (before execution begins) and what "execution done" looks like (before you verify
-quality).*
+**Q10 (3.5 min):** *What process debt tends to accumulate when this task is done
+repeatedly?* (What shortcuts get taken, what steps get skipped "just this once"?)
 
-**Q9:** *What behaviors by the AI should trigger an immediate STOP and human
-intervention?* Phrase each as "Stop if AI [specific behavior]."
-
-**Q10:** *What process debt tends to accumulate when this task is done repeatedly?*
-(What shortcuts get taken, what steps get skipped "just this once"?)
-
-**Q11:** *What do you want to learn and improve from each cycle?* (What would make the
-next cycle faster, higher quality, or less stressful?)
+**Q11 (3.5 min):** *What do you want to learn and improve from each cycle?* (What would
+make the next cycle faster, higher quality, or less stressful?)
 
 ---
 
@@ -191,17 +197,17 @@ with a plan already confirmed, not a blank page.
 - [Q4]
 
 **Done looks like:**
-- [Q6]
+- [Q8]
 
 **Common failure modes to prevent:**
-- [Q7]
+- [Q9]
 
 **Phase boundaries:**
-- Analysis done: [Q8]
-- Execution done: [Q8]
+- Analysis done: [Q7]
+- Execution done: [Q7]
 
 **STOP triggers (immediate human intervention):**
-- [Q9]
+- [Q6]
 
 **Learning loop focus:**
 - [Q10 and Q11]
@@ -242,7 +248,7 @@ Q1 (task + what a completed cycle delivers):
 
 Q2 (cycle frequency):
 
-DO — Layer 2: Human-AI Role Division
+DO — Layer 2 + Layer 4: Role Division and Process Shape
 Q3 (human judgment that can't be delegated):
 
 Q4 (what AI can execute autonomously — name the review gate: "AI drafts X, human
@@ -250,18 +256,17 @@ reviews before Y"):
 
 Q5 (irreversible / highest-stakes moments):
 
+Q6 (STOP triggers — phrase each as "Stop if AI [behavior]"):
+
+Q7 (phase boundaries — analysis done / execution done):
+
 CHECK — Layer 3: Quality Contract
-Q6 (3-5 observable signals of a successful cycle):
+Q8 (3-5 observable signals of a successful cycle):
  1.
  2.
  3.
 
-Q7 (common failure modes to prevent):
-
-ACT — Layer 4: Process Shape
-Q8 (phase boundaries — analysis done / execution done):
-
-Q9 (STOP triggers — phrase each as "Stop if AI [behavior]"):
+Q9 (common failure modes to prevent):
 
 ACT — Layer 5: Learning Loop
 Q10 (process debt that accumulates):
@@ -279,11 +284,14 @@ Q11 (what to learn/improve each cycle):
 - **The peer vagueness pass is not optional filler.** A plan with "the human owns the
   important parts" written under Q3 will produce a generated skill with no real
   intervention points. This is the single highest-leverage 3 minutes in the exercise.
-- **The Q4 and Q9 phrasing conventions matter as much as the content.** "AI drafts X,
+- **The Q4 and Q6 phrasing conventions matter as much as the content.** "AI drafts X,
   human reviews before Y" and "Stop if AI [behavior]" aren't style preferences — they're
   the literal phrasing Prompt 2 and the generated skill's templates expect. Answers
   written any other way still work, but need a translation step the room doesn't have
   time for; answers written in these forms paste in directly.
+- **DO is the long phase (14 min) because it now carries five questions, not three.**
+  Don't compress it to protect ACT — ACT only has two questions left and genuinely fits
+  in 7 minutes.
 - **Don't let Q1 turn into scope debate.** If someone's task is too big, tell them to
   scope it to one recurring cycle, not the whole area of responsibility.
 - **Hold the line on "real task."** If someone insists on a toy example anyway, let
