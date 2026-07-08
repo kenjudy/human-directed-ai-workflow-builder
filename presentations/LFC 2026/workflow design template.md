@@ -1,0 +1,26 @@
+**Task:** [Q1 — in one sentence: what is the task, and what does a completed cycle deliver?]
+**Cycle frequency:** [Q2 — daily / weekly / monthly / quarterly / on-demand / event-triggered]
+
+**Human owns:**
+- [Q3 — what parts require human judgment that cannot be delegated to AI?]
+- [Q5 — what are the irreversible or highest-stakes moments?]
+
+**AI executes (with review gates):**
+- [Q4 — what parts can AI execute autonomously? Name the gate: "AI drafts X, human reviews before Y"]
+
+**Done looks like:**
+- [Q8 — name 3-5 specific, observable signals of a successfully completed cycle]
+
+**Common failure modes to prevent:**
+- [Q9 — what are the most common failure modes you want this process to prevent?]
+
+**Phase boundaries:**
+- Analysis done: [Q7 — what does "analysis done" look like, before execution begins?]
+- Execution done: [Q7 — what does "execution done" look like, before you verify quality?]
+
+**STOP triggers (immediate human intervention):**
+- [Q6 — phrase each as "Stop if AI [specific behavior]"]
+
+**Learning loop focus:**
+- [Q10 — what process debt tends to accumulate when this task is done repeatedly?]
+- [Q11 — what do you want to learn and improve from each cycle?]
