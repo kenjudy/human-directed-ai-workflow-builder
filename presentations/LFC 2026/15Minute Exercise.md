@@ -80,14 +80,6 @@ Now the actual division of labor — this is what "AI does the doing" concretely
 
 > **Model answer:** "Sending the update to external stakeholders — once it's sent, I can't unsend a wrong number or a premature risk disclosure."
 
-**Q6:** *What AI behavior should trigger an immediate STOP?*
-
-> **Model answer:** "Stop if AI drafts a risk statement about a stakeholder's team without me reviewing the wording first. Stop if AI sends or schedules the update without my explicit sign-off. Stop if AI uses data older than this week without flagging it as stale."
-
-**Q7:** *What are the phase boundaries: "analysis done" and "execution done"?*
-
-> **Model answer:** "Analysis done: this week's tracker data is pulled and I know which risks are still open. Execution done: the full draft exists with metrics, risks, and asks sections complete, before my own read-through."
-
 ---
 
 ## CHECK — Layer 3: Quality Contract (3 min)
@@ -98,13 +90,21 @@ Say:
 How do you know a cycle actually went well? This is also where vague answers get caught and get fixed.
 ```
 
-**Q8:** *Name 3-5 specific, observable signals of success.*
+**Q6:** *Name 3-5 specific, observable signals of success.*
 
 > **Model answer:** "(1) every shipped item this week is reflected accurately, (2) every open risk above medium severity is named with an owner, (3) every ask names a specific person and a deadline — zero vague asks, (4) I read and edited the final draft myself before it went out."
 
-**Q9:** *What are the most common failure modes to prevent?*
+**Q7:** *What are the most common failure modes to prevent?*
 
 > **Model answer:** "A real risk gets buried in the details instead of called out up top. The update goes out without me actually reading the final draft. The numbers are stale because the draft used last week's data."
+
+**Q8:** *What AI behavior should trigger an immediate STOP?*
+
+> **Model answer:** "Stop if AI drafts a risk statement about a stakeholder's team without me reviewing the wording first. Stop if AI sends or schedules the update without my explicit sign-off. Stop if AI uses data older than this week without flagging it as stale."
+
+**Q9:** *What are the phase boundaries: "analysis done" and "execution done"?*
+
+> **Model answer:** "Analysis done: this week's tracker data is pulled and I know which risks are still open. Execution done: the full draft exists with metrics, risks, and asks sections complete, before my own read-through."
 
 
 

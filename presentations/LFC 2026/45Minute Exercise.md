@@ -17,8 +17,7 @@ The Plan → Do → Check → Act loop is a Socratic Discovery process this repo
 If the walkthrough's bridge already ran, participants have their real task written down and are ready for PLAN. If you're starting fresh (walkthrough skipped), ask the room first:
 
 ```
-Think of a task you do over and over, one you'd actually want a custom AI-assisted
-skill for. It needs to be real — you're about to build an actual plan for it.
+Think of a task you do over and over, one you'd actually want a custom AI-assisted skill for. It needs to be real — you're about to build an actual plan for it.
 ```
 
 **Fallback example** (only if someone truly can't name one in the moment):
@@ -66,10 +65,7 @@ Let's understand the task you want to systematize. Answer both, written.
 Say:
 
 ```
-Now let's map who owns what, and where the boundaries of "doing" actually sit. For Q4,
-name the review gate explicitly: "AI drafts X, human reviews before Y" — not just "AI
-drafts X." For Q6, phrase each trigger as "Stop if AI [behavior]." Both phrasings slot
-straight into the generated skill without editing.
+Now let's map who owns what, and where the boundaries of "doing" actually sit. For Q4, name the review gate explicitly: "AI drafts X, human reviews before Y" — not just "AI drafts X." 
 ```
 
 **Q3 (2.5 min):** *What parts of this task require human judgment that cannot be delegated to AI?* (Think: decisions that depend on relationships, context not in documents, ethical weight, or accountability.)
@@ -78,9 +74,6 @@ straight into the generated skill without editing.
 
 **Q5 (2.5 min):** *What are the irreversible or highest-stakes moments — decisions the human must own, where a mistake is costly or hard to undo?*
 
-**Q6 (3 min):** *What behaviors by the AI should trigger an immediate STOP and human intervention?* Phrase each as "Stop if AI [specific behavior]." (Think: scope creep, skipping a step, making assumptions about stakeholders, producing output without a required review gate.)
-
-**Q7 (2.5 min):** *What are the natural phases in this task? Describe what "analysis done" looks like (before execution begins) and what "execution done" looks like (before you verify quality).*
 
 ---
 
@@ -89,13 +82,16 @@ straight into the generated skill without editing.
 Say:
 
 ```
-Now let's define what "done well" looks like — then pressure-test everything you've
-written so far.
+Now let's define what "done well" looks like — then pressure-test everything you've written so far. For Q6, phrase each trigger as "Stop if AI [behavior]." Both phrasings slot straight into the generated skill without editing.
 ```
 
-**Q8:** *How do you know when one cycle is successfully complete? Name 3-5 specific, observable signals.* Not "it feels right" — what would you point to?
+**Q6:** *How do you know when one cycle is successfully complete? Name 3-5 specific, observable signals.* Not "it feels right" — what would you point to?
 
-**Q9:** *What are the most common failure modes you want this process to prevent?* (What goes wrong when the task is done badly or skipped?)
+**Q7:** *What are the most common failure modes you want this process to prevent?* (What goes wrong when the task is done badly or skipped?)
+
+**Q8 (3 min):** *What behaviors by the AI should trigger an immediate STOP and human intervention?* Phrase each as "Stop if AI [specific behavior]." (Think: scope creep, skipping a step, making assumptions about stakeholders, producing output without a required review gate.)
+
+**Q9 (2.5 min):** *What are the natural phases in this task? Describe what "analysis done" looks like (before execution begins) and what "execution done" looks like (before you verify quality).*
 
 ### Peer Vagueness Pass (folded into CHECK's 8 minutes — budget the last 3)
 
